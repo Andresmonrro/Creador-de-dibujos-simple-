@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+  <script src="Scripts/input.js"></script>
+  <link rel="stylesheet" href="Styles/style.css">
+  <title></title>
+</head>
+<body>
+  <nav class="nav">
+    <h1>
+      Crea un personaje
+    </h1>
+  </nav>
+  <main class="main">
+    <div>
+      <div>
+        <form class="form" onsubmit="envio();">
+          <div class="form_container">
+            <div class="form_1">
+                <b>color de pelo</b><input type="color" name="uno" id="unoo">
+            </div>
+            <div class="form_2">
+                <b>color de sueter</b><input type="color" name="dos" id="doss">
+            </div>
+            <div class="form_3">
+                <b>color de pantalon</b><input type="color" name="tres" id="tress">
+            </div>
+            <div class="form_4">
+                <b>color de zapatos</b><input type="color" name="cuatro" id="cuatroo">
+            </div>
+          </div>
+          <div class="boton">
+            <button type="submit" class="enviar">Crear</button>
+              <button type="reset"class="reseteo" onclick="reseteo()">Reiniciar</button>
+         </form>
+            <p hidden="" id="confirmacion">
+              personaje creado
+            </p>
+            <p hidden="" id="rechazo">
+              >>no hay mas espacio<<
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="personajes">
+        <div class="cop" id="1">
+          <p class="ppp">
+            espacio 1
+          </p>
+          <div hidden=""class="cabeza cu"></div>
+          <div hidden=""class="pecho cu"></div>
+          <div hidden=""class="piernas cu"></div>
+          <div hidden=""class="pies cu"></div>
+        </div>
+        <div class="cop" id="2">
+          <p class="ppp">
+            espacio 2
+          </p>
+          <div hidden=""class="cabeza cu"></div>
+          <div hidden=""class="pecho cu"></div>
+          <div hidden=""class="piernas cu"></div>
+          <div hidden=""class="pies cu"></div>
+        </div>
+        <div class="cop" id="3">
+          <p>
+            espacio 3
+          </p>
+          <div hidden=""class="cabeza cu"></div>
+          <div hidden=""class="pecho cu"></div>
+          <div hidden=""class="piernas cu"></div>
+          <div hidden=""class="pies cu"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
